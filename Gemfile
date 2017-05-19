@@ -54,3 +54,7 @@ gem 'erubis'
 
 gem 'cancancan'
 gem 'rolify'
+
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails'
+gem 'turbolinks'

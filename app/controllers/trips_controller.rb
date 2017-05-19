@@ -11,6 +11,7 @@ class TripsController < ApplicationController
   # GET /trips/1
   # GET /trips/1.json
   def show
+    @available_seats = @trip.available_seats
   end
 
   # GET /trips/new

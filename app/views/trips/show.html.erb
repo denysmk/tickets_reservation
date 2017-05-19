@@ -32,6 +32,12 @@
         <%= f.hidden_field :trip_id, value: @trip.id %>
         First name: <%= f.text_field :first_name %>
         Last name : <%= f.text_field :last_name %>
+        <div class="dropdown col-xs-2">
+          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+            <span class="caret"></span><%= f.label :seat_number %><br />
+            <%=	f.select :seat_number ,@available_seats, class: '' %></button>
+
+        </div>
         <%= f.submit %>
     <% end %>
   <% end %>

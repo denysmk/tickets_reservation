@@ -21,7 +21,7 @@
         <td><%= trip.departure_time %></td>
         <td><%= trip.arrival %></td>
         <td><%= trip.arrival_time %></td>
-        <td><%= trip.number_of_seats %></td>
+        <td><%= trip.available_seats.count %></td>
         <td><%= link_to 'Buy a ticket', trip %></td>
         <% if user_signed_in? && current_user.has_role?(:admin) %>
           <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
