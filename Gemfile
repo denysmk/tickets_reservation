@@ -55,7 +55,7 @@ gem 'erubis'
 gem 'cancancan'
 gem 'rolify'
 
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jquery-datatables-rails', '~> 3.4.0'

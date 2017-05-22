@@ -14,5 +14,17 @@
  *= require_self
  *= require dataTables/jquery.dataTables
  */
-
+@import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding: 15px 0;
+  a {
+    color: #2F363E;
+  }
+}
+
