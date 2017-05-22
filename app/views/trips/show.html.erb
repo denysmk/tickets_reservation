@@ -26,7 +26,7 @@
 </p>
   <% if user_signed_in? && current_user.has_role?(:admin) %>
     <%= link_to 'Edit', edit_trip_path(@trip) %> |
-    <% else %>
+    <% elsif user_signed_in? %>
     <%= form_for(Ticket.new) do |f| %>
         <%= f.hidden_field :user_id, value: current_user.id %>
         <%= f.hidden_field :trip_id, value: @trip.id %>
@@ -36,7 +36,6 @@
           <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
             <span class="caret"></span><%= f.label :seat_number %><br />
             <%=	f.select :seat_number ,@available_seats, class: '' %></button>
-
         </div>
         <%= f.submit %>
     <% end %>
