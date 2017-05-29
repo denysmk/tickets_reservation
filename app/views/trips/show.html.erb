@@ -22,7 +22,7 @@
 
 <p>
   <strong>Number of seats:</strong>
-  <%= @trip.available_seats.count %>
+  <%= @trip.available_seats %>
 </p>
   <% if user_signed_in? && current_user.has_role?(:admin) %>
     <%= link_to 'Edit', edit_trip_path(@trip) %> |
